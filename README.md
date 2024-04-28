@@ -6,4 +6,4 @@ El model que se utilizo fue el Gradiente Estocatico descendiente, con un loss de
 
 # Data Source
 
-Esta data fue extraida desde "https://ai.stanford.edu/~amaas/data/sentiment/", son 50.000 criticas de peliculas de cine. En el link indicado lo descargar, y los extraes, y con el [Load Data](href="https://github.com/ingvamartinez/API_NPL/blob/main/load_data_aclImdb.ipynb")
+Esta data fue extraida desde "https://ai.stanford.edu/~amaas/data/sentiment/", son 50.000 criticas de peliculas de cine. En el link indicado lo descargar, y los extraes, y con el [ Load Data ]("https://github.com/ingvamartinez/API_NPL/blob/main/load_data_aclImdb.ipynb")
