@@ -1,8 +1,42 @@
 body {
     font-size: 2em;
-    width: 600px;
+    width: 800px;
+    background-color: darkgrey;
 }
 
-button{
+button {
     padding-top: 20px;
+    
 }
+
+table{
+    align-self: center;
+}
+
+div {
+    display: flex;
+}
+
+div.brand {
+    vertical-align: top;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    text-decoration-color: white;
+    padding-left: 5%;
+    padding-top: 0.5%;
+    color: white;
+    padding-bottom: 1.5%;
+
+}
+
+form {
+    display: flex;
+}
+div.center{
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    vertical-align: bottom;
+}
+

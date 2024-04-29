@@ -5,16 +5,39 @@
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body>
-    <h2>Please enter your movie review:</h2>
+    <div class="brand" text-color="white" >
+        <h2>Classification Movie's Critics</h2>
+
+    </div>
+    
+    <h2>Data Source Stanford-aclimdb</h2>
+    <A href="https://ai.stanford.edu/~amaas/data/sentiment/" name="Descargue aqui">Download here!</A>
     {% from "_formhelpers.html" import render_field %}
-    <form method="post" action="/results">
-        <dl>
-        {{render_field(form.moviereview, cols='30', rows='10')}}
-        </dl>
-        <div>
-            <input type="submit" value="Submit review"
-            name="'submit_btn">
-        </div>
-    </form>
+    <td>
+    <div class="form">
+        <table>
+            <tr>
+                <td>
+                <img src="../static/movies.jpg" width="400px" height="400px"/>
+                </td>
+                <td>
+                <div>Please enter your movie review:</div>
+                <form method="post" action="/results">
+                    
+                    <dl>
+                    {{render_field(form.moviereview, cols='30', rows='10')}}
+                    </dl>
+                    <div class="center">
+                       
+                        <input type="submit" value="Submit review"
+                        name="'submit_btn">
+                        
+                    </div>
+                </form>
+                 </td>
+            </tr>
+        </table>
+    </div>
+</td>
 </body>
 </html>

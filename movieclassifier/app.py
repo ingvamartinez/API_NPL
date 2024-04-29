@@ -39,7 +39,7 @@ def sql_entry(path, document, y):
     conn=sqlite3.connect(path)
     c=conn.cursor()
     c.execute("INSERT INTO review_db (review,sentiment,date)"\
-              " VALUES(?, ?, DATETIME(now))",(document,y))
+              " VALUES(?, ?, DATETIME('now'))",(document,y))
     conn.commit()
     conn.close()
 
@@ -55,6 +55,8 @@ def index():
     """revier del form"""
     form = ReviewForm(request.form)
     return render_template('reviewform.html',form=form)
+
+
 
 @app.route('/results', methods=['POST'])
 def results():
